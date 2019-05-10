@@ -2,6 +2,7 @@
 import matplotlib.pyplot as plt
 import math
 
+####################################################################
 # Extract data pnts from the file and place in 2D list P
 P=[[]]
 del(P[0])
@@ -10,6 +11,8 @@ with open ('iris_dataset.txt') as myfile:
         raw=[line[0:3], line[4:7]]
         raw=list(map(float,raw))
         P.append(raw)
+#############################################################
+
 
 # function to calculate Manhatten distance
 def findDistance(s1,s2):
